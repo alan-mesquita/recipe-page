@@ -51,7 +51,7 @@ section > .subtitles {
 body {
   font-family: "Outfit", sans-serif;
   background-Color: var(--rose-white);
-  height: 100vh;
+  height: 100%;
   display: grid;
   place-items: center;
 }
@@ -114,6 +114,10 @@ section.instructions > ol {
   line-height: 150%;
 }
 
+section.nutrition > table{
+  border-spacing: 0px;
+}
+
 section.nutrition > table th,
 section.nutrition > table td{
   border-bottom: 1px solid var(--light-grey);
@@ -128,4 +132,36 @@ section.nutrition > table th {
 section.nutrition > table td {
   color: var(--nutmeg);
   font-weight: 700;
+}
+
+@media (min-width:600px) {
+  main {
+    width: min(760px, 90%);
+    height: max-content;
+    padding: 40px;
+    margin: 130px 0;
+    border-radius: 20px;
+  }
+
+  main > img {
+    margin-bottom: 40px;
+    border-radius: 10px;
+  }
+
+  main .content {
+    padding: 0;
+    gap: 30px;
+  }
+
+  section.introduction > .title {
+    font-size: 41px;
+  }
+
+  section.introduction > .container {
+    padding: 30px;
+  }
+
+  section.ingredients > ul {
+    gap: 14px;
+  }
 }
