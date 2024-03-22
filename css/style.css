@@ -50,7 +50,7 @@ section > .subtitles {
 
 body {
   font-family: "Outfit", sans-serif;
-  background-Color: var(--rose-white);
+  background-Color: var(--eggshell);
   height: 100%;
   display: grid;
   place-items: center;
